@@ -1,0 +1,56 @@
+<div class="booking-container">
+
+<h2>Occupied Rooms</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Room No</th>
+      <th>Status</th>
+      <th>Guest Name</th>
+      <th>Mobile No</th>
+      <th>Address</th>
+      <th>Check-in Date</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let room of occupiedRooms">
+      <td>{{ room.roomNo }}</td>
+      <td>{{ room.status }}</td>
+      <td>{{ room.name }}</td>
+      <td>{{ room.mobile }}</td>
+      <td>{{ room.address }}</td>
+      <td>{{ room.checkInDate.toDateString() }}</td>
+    </tr>
+  </tbody>
+
+</table>
+
+<br>
+
+<h2>Available Rooms</h2>
+
+<table>
+
+  <thead>
+    <tr>
+      <th>Room No</th>
+      <th>Status</th>
+      <th>Type</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let room of availableRooms">
+      <td>{{ room.roomNo }}</td>
+      <td>{{ room.status }}</td>
+      <td>{{ room.type }}</td>
+      <td>{{ room.price }}</td>
+    </tr>
+  </tbody>
+
+</table>
+
+</div>

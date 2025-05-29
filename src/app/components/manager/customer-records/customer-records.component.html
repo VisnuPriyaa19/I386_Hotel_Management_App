@@ -1,0 +1,38 @@
+<div class="customer-container">
+  <h2>Customer Records</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Mobile</th>
+        <th>Address</th>
+        <th>Allotted Room No</th>
+        <th>Check-in date</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let customer of customers">
+        <td>{{ customer.name }}</td>
+        <td>{{ customer.mobile }}</td>
+        <td>{{ customer.address }}</td>
+        <td>{{ customer.roomNo }}</td>
+        <td>{{ customer.check_in_date.toDateString() }}</td>
+        <td>
+          <button (click)="viewRoomDetails(customer.roomNo)">View Room Details</button>
+        </td>
+      </tr>
+    </tbody>
+
+  </table>
+
+  <div *ngIf="selectedRoomDetails" class="room-details">
+    <h3>Room {{selectedRoomDetails.roomNo}} Details</h3>
+    <p>Type: {{ selectedRoomDetails.type }}</p>
+    <p>Price: ₹{{ selectedRoomDetails.price }}</p>
+    <p>Status: {{ selectedRoomDetails.status }}</p>
+  </div>
+
+</div>

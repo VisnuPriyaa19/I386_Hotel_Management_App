@@ -1,0 +1,25 @@
+<div class="page-container">
+
+  <header class="header">
+    <h1>🏨Hotel TranquilNest</h1>
+  </header>
+
+  <main class="manager-box">
+    <h2>Welcome Manager</h2>
+
+    <div class="nav-buttons">
+      <button routerLink="staff" routerLinkActive="active">Manage Staffs</button>
+      <button routerLink="customer" routerLinkActive="active">View Customer Records</button>
+    </div>
+  </main>
+
+  <!-- Child routes are rendered here -->
+  <section class="child-container">
+    <router-outlet></router-outlet>
+  </section>
+
+  <div style="text-align: center; margin-top: 30px;">
+    <a routerLink="" routerLinkActive="active" style="text-decoration: none; font-weight: bold;">Home Page</a>
+  </div>
+
+</div>

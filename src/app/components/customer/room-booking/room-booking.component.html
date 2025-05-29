@@ -1,0 +1,27 @@
+<div class="room-container">
+
+<h2>Available Rooms</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Room No</th>
+      <th>Type</th>
+      <th>Price</th>
+      <th>Status</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let room of availableRooms">
+      <td>{{ room.roomNo }}</td>
+      <td>{{ room.type }}</td>
+      <td>{{ room.price }}</td>
+      <td>{{ room.status }}</td>
+      <td><button (click)="bookRoom(room.roomNo)">Book Room</button></td>
+    </tr>
+  </tbody>
+
+</table>
+
+</div>

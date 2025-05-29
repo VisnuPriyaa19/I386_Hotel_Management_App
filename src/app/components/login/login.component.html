@@ -1,0 +1,32 @@
+<div class="page-container">
+
+  <header class="header">
+    <h1>🏨Hotel TranquilNest</h1>
+  </header>
+
+  <main class="login-box">
+    <h2>Hotel Management Login</h2>
+
+    <select id="role" [(ngModel)]="selected_role">        <!--two way binding used here-->
+      <option value="" >Select a role</option>
+      <option value="manager">Manager</option>
+      <option value="receptionist">Receptionist</option>
+      <option value="customer">Customer</option>
+    </select>
+
+    <button (click)="login()">Login</button>
+
+    <p class="error" *ngIf="error_msg">{{ error_msg }}</p>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <p>&copy; 2025 Hotel TranquilNest. All rights reserved.</p>
+  </footer>
+  
+</div>

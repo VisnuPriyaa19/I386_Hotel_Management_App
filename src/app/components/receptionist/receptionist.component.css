@@ -1,0 +1,59 @@
+.page-container {
+  min-height: 100vh;
+  background: #f4f4f4;
+}
+
+.header {
+  text-align: center;
+  padding: 30px 0 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+  margin: 10px 0 0;
+  font-size: 26px;
+  color: #333;
+}
+
+.receptionist-box {
+  background: #fff;
+  max-width: 600px;
+  margin: 40px auto 0;  /* Only top margin to create space from header */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.receptionist-box h2 {
+  margin-bottom: 25px;
+  font-size: 22px;
+  color: #2c3e50;
+}
+
+.nav-buttons {
+  margin-bottom: 30px;
+}
+
+.nav-buttons button {
+  margin: 0 10px;
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.child-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
